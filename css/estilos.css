@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.titulo__principal{
+    background-color: #b14949;
+    color: #ffffff;
+    height: 4rem;
+    
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+.container__imagen{
+    height: 200px;
+    background-color: #b88462;
+    
+}
+
+.texto__parrafo{
+    font-family: 'Dancing Script', cursive;
+    font-size: x-large;
+    text-align: left;
+    color: white;
+    padding: 30px;
+}
+
+.container__card{
+    width: 100%;
+    height: 35rem;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color:  #fcaf7d;
+    
+}
+
+
+.card{
+   
+    padding: 0;
+    margin: 0;
+    opacity: 0.8;
+    background-color: #eca16381;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.card-body{
+    text-align: center;
+    color: black;
+
+}
+
+ .card:hover{
+        opacity: 1;
+        transform: scale(1.1,1.1);
+        transition: all 1s;
+   
+    }
+
+.card-title{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding: 10px;
+    }
+.card-text{
+        font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+.btn {
+    font-size: small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card {
+        width: 10rem;
+        margin: 10px;
+        padding: 5px;
+    }    
