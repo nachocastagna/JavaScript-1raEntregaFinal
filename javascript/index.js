@@ -1,3 +1,5 @@
+
+
 class Animal{ //clase generadora de animales con estas caracteristicas
     constructor(nombre, tipo, color, raza){
         this.nombre =  nombre;
@@ -44,7 +46,7 @@ alert("Aqui podras poner en busqueda tu animal perdido!"); // alert para agregar
 
 let busquedaNombre = prompt("Escriba nombre del animal perdido");
 
-let buscar = animales.find(animal => animal.nombre === busquedaNombre.toLocaleLowerCase());
+let buscar = animales.find(animal => animal.nombre === busquedaNombre);
 
 
 if(buscar === undefined){
@@ -60,3 +62,7 @@ Color: ${buscar.color}
 Raza: ${buscar.raza}`);
 
 alert(mensaje);}
+
+
+
+
