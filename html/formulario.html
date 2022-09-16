@@ -4,22 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/formulario.css">
+    <link rel="stylesheet" href="../css/formulario.css">
     <title>Formulario de animales perdidos</title>
 </head>
 <body>
    
-<form id="formulario">
-            <input type="text" name="nombre" class="texto" placeholder="Nombre del animal perdido">
-            <input type="text" name="raza" class="texto" placeholder="Raza del animal perdido">
-            <input type="text" name="Tipo" class="texto" placeholder="Que animal es? Gato-Perro-otro">
-            <input type="number" name="telefono" class="texto" placeholder="Telefono de contacto">
-            <input type="mail" name="email" class="texto" placeholder="Correo electronico">
-            <input type="submit" value="Enviar" onclick="envioFormulario()">
-      
-</form>
+<div class="contenedor__formulario">
+
+    <h1 class="titulo__formulario"> Agrega aquí tu animal perdido </h1>
+
+    <form id="formulario" class="contenedor__inputs" >
+              
+        <input type="text" name="nombre" class="texto" placeholder="Nombre del animal perdido">
+        <input type="text" name="raza" class="texto" placeholder="Raza del animal perdido">
+        <input type="text" name="pipo" class="texto" placeholder="Color">
+        <input type="text" name="color" class="texto" placeholder="Que animal es? Gato-Perro-otro">
+        <input type="tel" name="telefono" class="texto" placeholder="Telefono de contacto">
+        <input type="email" name="email" class="texto" placeholder="Correo electronico" >
+        <input type="text" name="provincia" class="texto" placeholder="Provincia" >
+        <input type="text" name="barrio" class="texto" placeholder="Barrio" >
+        <input type="submit" value="Enviar" class="boton__form" onclick="envioFormulario()">
+          
+    </form>
+
+</div>
+
 <div id="contenedor"></div>
-<div id="animales"></div>
-<script src="/javascript/formulario.js"></script>
+
+<div id="animales" class="contenedor__animales">
+
+</div>
+
+<script src="../javascript/formulario.js"></script>
 </body>
 </html>

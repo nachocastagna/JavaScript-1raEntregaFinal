@@ -1,4 +1,76 @@
-.rojo{
-    background-color: red;
-    width:177px;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #b88462;
+}
+
+.letraAlerta{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    background-color: #b95353;
+    width:400px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 4px;
+}
+
+.letraAgregado{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    background-color: #31633c;
+    width:400px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 4px;
+}
+
+.contenedor__formulario{
+    background-color: #9e6945;
+
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+;}
+
+.titulo__formulario{
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 15px;
+    background-color: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor__inputs{
+    background-color: #9e6945;
+}
+
+.texto{
+    width: 100%;
+    background-color: #b88462;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.boton__form{
+    width: 100px;
+    height: 35px;
+    border-radius: 4px;
+    background-color: #b88462 ;
+    border: 1px solid #816262;
+
+}
+
+.contenedor__animales{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: black;
 }
