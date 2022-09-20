@@ -58,6 +58,9 @@ formulario.addEventListener("submit", (e) => {
   }
 );
 
+let animalitos = JSON.parse(localStorage.getItem("ANIMALES"));
+console.log(animalitos);
+
 
 
 
