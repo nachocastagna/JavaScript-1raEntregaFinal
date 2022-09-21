@@ -37,6 +37,8 @@ formulario.addEventListener("submit", (e) => {
   
   localStorage.setItem("ANIMAL", JSON.stringify(animalesArray)); // se guarda en localStorage 
 
+  
+
   let condicion = nombre && raza && tipo && color && telefono && email && provincia && barrio; // Condicion para agregar cartel si falta completar informacion en formulario
 
   if(condicion === ""){ 
@@ -54,6 +56,7 @@ formulario.addEventListener("submit", (e) => {
     div.className = "letraAgregado";
     contenedor.append(div);
     console.log(inputs);
+    
     }
   }
 );
@@ -61,6 +64,21 @@ formulario.addEventListener("submit", (e) => {
 let animalitos = JSON.parse(localStorage.getItem("ANIMALES"));
 console.log(animalitos);
 
-
-
-
+//// INTENDO HACER FUNCION AGREGADORA DE ANIMALES AL ARRAY
+/* 
+const agregarAnimal = (nombre, raza, tipo, color, telefono, email, provincia, barrio) => {
+  let busqueda =  JSON.parse(localStorage.getItem("ANIMAL"));
+  let animal = {
+    id: busqueda.length + 1,
+    nombre:  nombre,
+    raza: raza,
+    tipo: tipo,
+    color: color,
+    telefono: telefono,
+    email: email,
+    provincia: provincia,
+    barrio: barrio,
+  }
+  busqueda.push(animal);
+  localStorage.setItem("ANIMAL", JSON.stringify(busqueda));
+} */
