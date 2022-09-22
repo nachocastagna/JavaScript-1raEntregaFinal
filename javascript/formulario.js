@@ -14,18 +14,17 @@ formulario.addEventListener("submit", (e) => {
   const email = inputs[5].value ;
   const provincia = inputs[6].value ;
   const barrio = inputs[7].value ;
-
-
-  class Animal{ //clase generadora de animales con estas caracteristicas
+  
+ class Animal{ //clase generadora de animales con estas caracteristicas
     constructor(nombre, raza, tipo, color, telefono, email, provincia, barrio){
-        this.nombre =  nombre;
-        this.raza = raza;
-        this.tipo = tipo;
-        this.color = color;
-        this.telefono = telefono;
-        this.email = email;
-        this.provincia = provincia;
-        this.barrio = barrio;
+      this.nombre =  nombre;
+      this.raza = raza;
+      this.tipo = tipo;
+      this.color = color;
+      this.telefono = telefono;
+      this.email = email;
+      this.provincia = provincia;
+      this.barrio = barrio;
     }
   } 
   
@@ -35,9 +34,7 @@ formulario.addEventListener("submit", (e) => {
   
   animalesArray.push(agregar); // se agrega animal al arreglo o array
   
-  localStorage.setItem("ANIMAL", JSON.stringify(animalesArray)); // se guarda en localStorage 
-
-  
+  localStorage.setItem("animales", JSON.stringify(animalesArray)); // se guarda en localStorage 
 
   let condicion = nombre && raza && tipo && color && telefono && email && provincia && barrio; // Condicion para agregar cartel si falta completar informacion en formulario
 
@@ -60,25 +57,3 @@ formulario.addEventListener("submit", (e) => {
     }
   }
 );
-
-let animalitos = JSON.parse(localStorage.getItem("ANIMALES"));
-console.log(animalitos);
-
-//// INTENDO HACER FUNCION AGREGADORA DE ANIMALES AL ARRAY
-/* 
-const agregarAnimal = (nombre, raza, tipo, color, telefono, email, provincia, barrio) => {
-  let busqueda =  JSON.parse(localStorage.getItem("ANIMAL"));
-  let animal = {
-    id: busqueda.length + 1,
-    nombre:  nombre,
-    raza: raza,
-    tipo: tipo,
-    color: color,
-    telefono: telefono,
-    email: email,
-    provincia: provincia,
-    barrio: barrio,
-  }
-  busqueda.push(animal);
-  localStorage.setItem("ANIMAL", JSON.stringify(busqueda));
-} */
