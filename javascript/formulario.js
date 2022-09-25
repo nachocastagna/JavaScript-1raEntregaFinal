@@ -1,6 +1,7 @@
 let contenedor = document.getElementById("contenedor"); //trae desde HTML id "contenedor"
 let formulario = document.getElementById("formulario");//trae desde HTML id "formulario"
 let animales = document.getElementById("animales");//trae desde HTML id "animales"
+let perdidos = document.getElementById("perdidos");
 
 formulario.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -36,6 +37,7 @@ formulario.addEventListener("submit", (e) => {
   
   localStorage.setItem("animales", JSON.stringify(animalesArray)); // se guarda en localStorage 
 
+
   let condicion = nombre && raza && tipo && color && telefono && email && provincia && barrio; // Condicion para agregar cartel si falta completar informacion en formulario
 
   if(condicion === ""){ 
@@ -53,7 +55,10 @@ formulario.addEventListener("submit", (e) => {
     div.className = "letraAgregado";
     contenedor.append(div);
     console.log(inputs);
-    
     }
   }
 );
+
+console.log(animalesArray);
+
+ 
