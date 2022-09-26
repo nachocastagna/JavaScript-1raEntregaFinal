@@ -16,6 +16,8 @@ formulario.addEventListener("submit", (e) => {
   const provincia = inputs[6].value ;
   const barrio = inputs[7].value ;
   
+  const animalesArray = [/* {nombre: nombre, raza: raza, tipo: tipo, color: color, telefono: telefono, email: email, provincia: provincia, barrio:barrio} */] // array o arreglo
+
  class Animal{ //clase generadora de animales con estas caracteristicas
     constructor(nombre, raza, tipo, color, telefono, email, provincia, barrio){
       this.nombre =  nombre;
@@ -29,7 +31,6 @@ formulario.addEventListener("submit", (e) => {
     }
   } 
   
-  animalesArray = [] // array o arreglo
   
   let agregar = new Animal (nombre, raza, tipo, color, telefono, email, provincia, barrio);
   
@@ -37,8 +38,8 @@ formulario.addEventListener("submit", (e) => {
   
   localStorage.setItem("animales", JSON.stringify(animalesArray)); // se guarda en localStorage 
 
-
-  let condicion = nombre && raza && tipo && color && telefono && email && provincia && barrio; // Condicion para agregar cartel si falta completar informacion en formulario
+ 
+let condicion = nombre && raza && tipo && color && telefono && email && provincia && barrio; // Condicion para agregar cartel si falta completar informacion en formulario
 
   if(condicion === ""){ 
     contenedor.innerHTML = "";
@@ -57,8 +58,4 @@ formulario.addEventListener("submit", (e) => {
     console.log(inputs);
     }
   }
-);
-
-console.log(animalesArray);
-
- 
+  );
