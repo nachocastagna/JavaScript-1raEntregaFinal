@@ -1,7 +1,8 @@
 let contenedor = document.getElementById("contenedor"); //trae desde HTML id "contenedor"
 let formulario = document.getElementById("formulario");//trae desde HTML id "formulario"
 let animales = document.getElementById("animales");//trae desde HTML id "animales"
-let perdidos = document.getElementById("perdidos");
+
+const animalesArray = [] // array o arreglo
 
 formulario.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -15,47 +16,57 @@ formulario.addEventListener("submit", (e) => {
   const email = inputs[5].value ;
   const provincia = inputs[6].value ;
   const barrio = inputs[7].value ;
-  
-  const animalesArray = [/* {nombre: nombre, raza: raza, tipo: tipo, color: color, telefono: telefono, email: email, provincia: provincia, barrio:barrio} */] // array o arreglo
 
- class Animal{ //clase generadora de animales con estas caracteristicas
-    constructor(nombre, raza, tipo, color, telefono, email, provincia, barrio){
-      this.nombre =  nombre;
-      this.raza = raza;
-      this.tipo = tipo;
-      this.color = color;
-      this.telefono = telefono;
-      this.email = email;
-      this.provincia = provincia;
-      this.barrio = barrio;
-    }
-  } 
-  
-  
-  let agregar = new Animal (nombre, raza, tipo, color, telefono, email, provincia, barrio);
-  
-  animalesArray.push(agregar); // se agrega animal al arreglo o array
-  
-  localStorage.setItem("animales", JSON.stringify(animalesArray)); // se guarda en localStorage 
-
- 
-let condicion = nombre && raza && tipo && color && telefono && email && provincia && barrio; // Condicion para agregar cartel si falta completar informacion en formulario
+ let condicion = nombre && raza && tipo && color && telefono && email && provincia && barrio; // Condicion para agregar cartel si falta completar informacion en formulario
 
   if(condicion === ""){ 
-    contenedor.innerHTML = "";
-    let div = document.createElement("div");
-    div.innerHTML = "Falta completar informacíon";
-    div.className = "letraAlerta";
-    contenedor.append(div);
-    console.log(inputs);
+      Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Falta completar informacion',
+    })
     
   }else{
-    contenedor.innerHTML = "";
-    let div = document.createElement("div");
-    div.innerHTML = "Animal agregado con exito";
-    div.className = "letraAgregado";
-    contenedor.append(div);
-    console.log(inputs);
-    }
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'Tu animal ha sido agregado con exito',
+      showConfirmButton: false,
+      timer: 2500
+      })
+
+    class Animal{ //clase generadora de animales con estas caracteristicas
+      constructor(nombre, raza, tipo, color, telefono, email, provincia, barrio){
+        this.nombre =  nombre;
+        this.raza = raza;
+        this.tipo = tipo;
+        this.color = color;
+        this.telefono = telefono;
+        this.email = email;
+        this.provincia = provincia;
+        this.barrio = barrio;
+      }
+    }     
+
+    let agregar = new Animal (nombre, raza, tipo, color, telefono, email, provincia, barrio);
+
+    animalesArray.push(agregar); // se agrega animal al arreglo o array
+
+    localStorage.setItem("AnimalesGuardados", JSON.stringify(animalesArray));
+    
   }
-  );
+}
+);
+
+
+
+/* function getAnimalesArray() {
+  if(localStorage.setItem("AnimalesGuardados", JSON.stringify(animalesArray))  == null){
+    animalesArray =  [];
+  }else{
+    animales = [localStorage.getItem("AnimalesGuardados", JSON.parse(animalesArray))]
+  }
+  return animalesArray;
+}
+
+ */

@@ -84,7 +84,8 @@ body{
     background-color: #C98022;
     background-color: #f1b15c; }
     .footer .iconos {
-      display: inline; }
+      display:flex;
+      justify-content: space-evenly;}
     .footer .descripcion-logo h3 {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       font-size: small; }
