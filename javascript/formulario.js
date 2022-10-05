@@ -58,9 +58,6 @@ formulario.addEventListener("submit", (e) => {
 }
 );
 
-
-
-
 /* function getAnimalesArray() {
   if(localStorage.setItem("AnimalesGuardados", JSON.stringify(animalesArray))  == null){
     animalesArray =  [];
