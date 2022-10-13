@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     
     <link rel="stylesheet" href="../css/formulario.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <title>Formulario de animales perdidos</title>
 </head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #f1bf9e;">
+        <div class="container-fluid">
+          <a class="navbar-brand">Animales Perdidos</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              <a class="nav-link" href="./buscador.html">Listado de animales</a>
+
+            </div>
+          </div>
+        </div>
+      </nav>
+</header>
 <body>
    
 <div class="contenedor__formulario">
@@ -19,12 +39,16 @@
               
         <input type="text" name="nombre" class="texto" placeholder="Nombre del animal perdido">
         <input type="text" name="raza" class="texto" placeholder="Raza del animal perdido">
-        <input type="text" name="tipo" class="texto" placeholder="¿Que animal es?">
+        <!-- <input type="text" name="tipo" class="texto" placeholder="¿Que animal es?"> -->
         <input type="text" name="color" class="texto" placeholder="Color del animal">
         <input type="tel" name="telefono" class="texto" placeholder="Telefono de contacto">
-        <input type="email" name="email" class="texto" placeholder="Correo electronico" >
-        <input type="text" name="provincia" class="texto" placeholder="Provincia" >
+        <!-- <input type="email" name="email" class="texto" placeholder="Correo electronico" >
+        <input type="text" name="provincia" class="texto" placeholder="Provincia" > -->
         <input type="text" name="barrio" class="texto" placeholder="Barrio" >
+        <div class="mb-1">
+           
+            <input class="form-control" type="file" id="formFile">
+          </div>
         <input type="submit" value="Enviar" class="boton__form">
           
     </form>
@@ -34,21 +58,6 @@
 <div id="contenedor"></div>
 
 <div id="animales" class="contenedor__animales"></div>
-
-<footer class="footer">
-
-    <div class="iconos">
-        <a href="../index.html" target="_blank"><i class="bi bi-house width:1rem"></i></i></i></a>
-        <div class="descripcion-logo">
-            <h3>Volver al inicio</h3>
-        </div>
-
-    <div class="iconos">
-        <a href="../html/buscador.html" target="_blank"><i class="bi bi-card-list"></i></i></a>
-        <div class="descripcion-logo">
-            <h3>Listado de animales perdidos</h3>
-        </div>
-</footer>
 
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="../javascript/formulario.js"></script>

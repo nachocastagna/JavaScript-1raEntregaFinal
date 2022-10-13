@@ -10,14 +10,14 @@ formulario.addEventListener("submit", (e) => {
 
   const nombre = inputs[0].value ;
   const raza = inputs[1].value ;
-  const tipo = inputs[2].value ;
-  const color = inputs[3].value ;
-  const telefono = inputs[4].value ;
-  const email = inputs[5].value ;
-  const provincia = inputs[6].value ;
-  const barrio = inputs[7].value ;
+  //const tipo = inputs[2].value ;
+  const color = inputs[2].value ;
+  const telefono = inputs[3].value ;
+ // const email = inputs[5].value ;
+ // const provincia = inputs[6].value ;
+  const barrio = inputs[4].value ;
 
- let condicion = nombre && raza && tipo && color && telefono && email && provincia && barrio; // Condicion para agregar cartel si falta completar informacion en formulario
+ let condicion = nombre && raza && color && telefono && barrio; // Condicion para agregar cartel si falta completar informacion en formulario
 
   if(condicion === ""){ 
       Swal.fire({
@@ -36,19 +36,19 @@ formulario.addEventListener("submit", (e) => {
       })
 
     class Animal{ //clase generadora de animales con estas caracteristicas
-      constructor(nombre, raza, tipo, color, telefono, email, provincia, barrio){
+      constructor(nombre, raza, color, telefono, barrio){
         this.nombre =  nombre;
         this.raza = raza;
-        this.tipo = tipo;
+        //this.tipo = tipo;
         this.color = color;
         this.telefono = telefono;
-        this.email = email;
-        this.provincia = provincia;
+       // this.email = email;
+        //this.provincia = provincia;
         this.barrio = barrio;
       }
     }     
 
-    let agregar = new Animal (nombre, raza, tipo, color, telefono, email, provincia, barrio);
+    let agregar = new Animal (nombre, raza, color, telefono, barrio);
 
     animalesArray.push(agregar); // se agrega animal al arreglo o array
 

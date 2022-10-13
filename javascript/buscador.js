@@ -1,3 +1,5 @@
+//PRACTICA CON LOCALSTORAGE
+
 /* let animalesCargados = JSON.parse(localStorage.getItem("AnimalesGuardados"));
 
 for(i = 0; i < animalesCargados.length; i++){
@@ -16,6 +18,8 @@ cardAnimales.innerHTML+=card
 
 }
  */
+
+//PRACTICA CON FETCH
 
 const traerDatos = async () => {
   const lista = document.getElementById("card-conteiner");
