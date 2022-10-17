@@ -7,10 +7,24 @@
     "raza":"Labrador"
 },
 {
-    "imagen": "https://www.trofeocaza.com/wp-content/uploads/2016/05/Labrador-mayor-2.jpg",
+    "imagen": "https://t1.ea.ltmcdn.com/es/posts/1/6/2/10_curiosidades_del_golden_retriever_21261_600.jpg",
     "nombre": "Kalu",
     "tipo":"Perro",
     "color":"Dorado",
     "raza":"Golden"
+},
+{
+    "imagen": "https://t1.ea.ltmcdn.com/es/posts/1/6/2/10_curiosidades_del_golden_retriever_21261_600.jpg",
+    "nombre": "Polo",
+    "tipo":"Perro",
+    "color":"Blanco",
+    "raza":"Labrador"
+},
+{
+    "imagen": "https://t1.ea.ltmcdn.com/es/posts/1/6/2/10_curiosidades_del_golden_retriever_21261_600.jpg",
+    "nombre": "Polo",
+    "tipo":"Perro",
+    "color":"Blanco",
+    "raza":"Labrador"
 }
 ]

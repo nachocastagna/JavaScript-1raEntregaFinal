@@ -21,7 +21,7 @@ body{
 .letraAgregado{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 12px;
-    background-color: #31633c;
+    /* background-color: #31633c; */
     width:400px;
     padding: 10px;
     margin: auto;
@@ -86,27 +86,15 @@ border-radius:1px;
 margin-bottom: 25px;
 }
 
-/* .footer {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    padding: 20px;
-    background-color: #C98022;
-    background-color: #f1b15c; }
-    .footer .iconos {
-      display:flex;
-      justify-content: space-between;
-        }
 
-    .footer .descripcion-logo h3 {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      font-size: small; 
-        }
-    .footer .bi {
+
+
+    .text-muted .bi {
     
       opacity: 0.9;
       color: rgb(34, 17, 17); }
-    .footer .bi:hover {
+
+    .text-muted  .bi:hover {
       opacity: 1;
       color: #c0e5e5; }
-   */
+  

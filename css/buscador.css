@@ -1,7 +1,37 @@
+
+
+body{
+    background-color: #b88462;
+}
+
+.titulo__buscador{
+    background-color: #f1e1d6;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    padding: 1rem;
+}
+
+.conetendor-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.card{
+    max-width: 400px;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+
 .card img{
-    padding-top: 5px;
     height: auto;
-    width: 300px;
+    max-width: 100%;
+    vertical-align: middle;
     
 }
 .card-title{
@@ -13,9 +43,9 @@
 
 .card-body {
     text-align: center;
-    width: 300px;
+    width: auto;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #b88462;
+    background-color: #9e6945;
 }
 
     .btn{
@@ -24,3 +54,13 @@
         background-color: #b88462 ;
         border: 1px solid #816262;
     }
+    
+.text-muted .bi {
+    
+        opacity: 0.9;
+        color: rgb(34, 17, 17); }
+  
+.text-muted  .bi:hover {
+        opacity: 1;
+        color: #c0e5e5; }
+    
