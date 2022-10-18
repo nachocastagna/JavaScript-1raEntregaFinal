@@ -23,6 +23,7 @@ cardAnimales.innerHTML+=card
 
 const traerDatos = async () => {
   const lista = document.getElementById("card-conteiner");
+  
   try {
     const response = await fetch("../datos/datos.json");
     const data = await response.json();
@@ -34,17 +35,40 @@ const traerDatos = async () => {
         <h5 class="card-title">${publicacion.nombre} / ${publicacion.raza} / ${publicacion.color} / ${publicacion.tipo}</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         <a href="#" class="btn btn-primary">Contactar al dueño</a>
-        <a href="#" class="btn btn-primary">Encontrado</a>
+        <button id="eliminar" class="btn btn-primary">Encontrado</button>
       </div>
     </div>`
 
     const cardAnimales = document.getElementById("card-conteiner");
     cardAnimales.innerHTML+=card
-    
-    });
-  } catch (error) {
-    console.log(error);
+  });
+} catch (error) {
+  console.log(error);
   }
 };
 
 traerDatos();
+
+let eliminar = document.getElementById("eliminar");
+
+eliminar.click(function(){  
+Swal.fire({
+  title: 'Are you sure?',
+  text: "You won't be able to revert this!",
+  icon: 'warning',
+  showCancelButton: true,
+  confirmButtonColor: '#3085d6',
+  cancelButtonColor: '#d33',
+  confirmButtonText: 'Yes, delete it!'
+  }).then((result) => {
+  if (result.isConfirmed) {
+    Swal.fire(
+      'Deleted!',
+      'Your file has been deleted.',
+      'success'
+    )
+  }
+  })});
+
+
+
