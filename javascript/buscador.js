@@ -16,10 +16,10 @@ for(i = 0; i < animalesCargados.length; i++){
 const cardAnimales = document.getElementById("card-conteiner");
 cardAnimales.innerHTML+=card
 
-}
- */
+}; */
 
-//PRACTICA CON FETCH
+
+//Fetch
 
 const traerDatos = async () => {
   const lista = document.getElementById("card-conteiner");
@@ -34,13 +34,41 @@ const traerDatos = async () => {
       <div class="card-body">
         <h5 class="card-title">${publicacion.nombre} / ${publicacion.raza} / ${publicacion.color} / ${publicacion.tipo}</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Contactar al dueño</a>
+        <button id="encontrado" class="btn btn-primary">Contactar al dueño</button>
         <button id="eliminar" class="btn btn-primary">Encontrado</button>
       </div>
     </div>`
 
     const cardAnimales = document.getElementById("card-conteiner");
     cardAnimales.innerHTML+=card
+
+    let encontrado = document.getElementById("encontrado");  
+
+    encontrado.addEventListener("click", function(){
+    let animalesCargados = JSON.parse(localStorage.getItem("AnimalesGuardados"));
+    Swal.fire(animalesCargados)});
+
+
+
+    let eliminar = document.getElementById("eliminar");
+    eliminar.addEventListener("click", function(){  
+    Swal.fire({
+      title: 'Quieres eliminar de la lista de animales perdidos?',
+      text: "Si eliminas, daremos por encontrado el animal",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Si, lo encontre!'
+      }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire(
+          'Animal eliminado!',
+          'Estamos muy felices',
+          'success'
+          )}})
+        });
+
   });
 } catch (error) {
   console.log(error);
@@ -48,27 +76,4 @@ const traerDatos = async () => {
 };
 
 traerDatos();
-
-let eliminar = document.getElementById("eliminar");
-
-eliminar.click(function(){  
-Swal.fire({
-  title: 'Are you sure?',
-  text: "You won't be able to revert this!",
-  icon: 'warning',
-  showCancelButton: true,
-  confirmButtonColor: '#3085d6',
-  cancelButtonColor: '#d33',
-  confirmButtonText: 'Yes, delete it!'
-  }).then((result) => {
-  if (result.isConfirmed) {
-    Swal.fire(
-      'Deleted!',
-      'Your file has been deleted.',
-      'success'
-    )
-  }
-  })});
-
-
 

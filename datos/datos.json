@@ -1,30 +1,45 @@
 [
 {
-    "imagen": "https://t1.ea.ltmcdn.com/es/posts/1/6/2/10_curiosidades_del_golden_retriever_21261_600.jpg",
-    "nombre": "Polo",
-    "tipo":"Perro",
-    "color":"Blanco",
-    "raza":"Labrador"
-},
-{
-    "imagen": "https://t1.ea.ltmcdn.com/es/posts/1/6/2/10_curiosidades_del_golden_retriever_21261_600.jpg",
+    "imagen": "https://i0.wp.com/blog.mascotaysalud.com/wp-content/uploads/2019/05/CARA-ROTTWEILER.jpg?fit=865%2C540&ssl=1",
     "nombre": "Kalu",
     "tipo":"Perro",
+    "color":"Negro",
+    "raza":"Rottweiler"
+},
+{
+    "imagen": "https://as01.epimg.net/diarioas/imagenes/2022/05/29/actualidad/1653826510_995351_1653826595_noticia_normal_recorte1.jpg",
+    "nombre": "Polo",
+    "tipo":"Perro",
+    "color":"Negro y blanco",
+    "raza":"Siberiano"
+},
+{
+    "imagen": "https://www.fundacion-affinity.org/sites/default/files/los-10-sonidos-principales-del-perro.jpg",
+    "nombre": "Zizu",
+    "tipo":"Perro",
     "color":"Dorado",
-    "raza":"Golden"
-},
-{
-    "imagen": "https://t1.ea.ltmcdn.com/es/posts/1/6/2/10_curiosidades_del_golden_retriever_21261_600.jpg",
-    "nombre": "Polo",
-    "tipo":"Perro",
-    "color":"Blanco",
     "raza":"Labrador"
 },
 {
-    "imagen": "https://t1.ea.ltmcdn.com/es/posts/1/6/2/10_curiosidades_del_golden_retriever_21261_600.jpg",
-    "nombre": "Polo",
+    "imagen": "https://www.animalfiel.com/wp-content/uploads/2019/03/temperamento-del-caniche.jpg",
+    "nombre": "Lara",
     "tipo":"Perro",
     "color":"Blanco",
-    "raza":"Labrador"
+    "raza":"Caniche"
+},
+{
+    "imagen": "https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2021/04/siames-scaled.jpg?fit=2560%2C1707&quality=50&strip=all&ssl=1",
+    "nombre": "Melchor",
+    "tipo":"Gato",
+    "color":"Marron y negro",
+    "raza":"Siames"
+},
+{
+    "imagen": "https://images.ecestaticos.com/FVdcvD11qPRi-JWDH3USTiXDmeQ=/0x0:2120x1414/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F47b%2F328%2F963%2F47b3289639713b8e80c8d682d219fba7.jpg",
+    "nombre": "Garra",
+    "tipo":"Gato",
+    "color":"Marron atigrado",
+    "raza":"Sin definir"
 }
+
 ]
