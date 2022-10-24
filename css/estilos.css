@@ -89,4 +89,13 @@ body{
         padding: 5px;
     }    
 
+.text-muted .bi {
+    
+        opacity: 0.9;
+        color: rgb(34, 17, 17); }
+  
+.text-muted  .bi:hover {
+        opacity: 1;
+        color: #c0e5e5; }
+    
  
