@@ -15,13 +15,14 @@ for(i = 0; i < animalesCargados.length; i++){
 
 const cardAnimales = document.getElementById("card-conteiner");
 cardAnimales.innerHTML+=card
-let encontrado = document.getElementById("encontrado");  
+};
 
+    let encontrado = document.getElementById("encontrado");  
     encontrado.addEventListener("click", function(){
-    let animalesCargados = JSON.parse(localStorage.getItem("AnimalesGuardados"));
-    Swal.fire(animalesCargados)});
-
-
+    for(i=0; i< animalesCargados.length;i++){  
+    Swal.fire(
+      'Telefono', animalesCargados[i].telefono
+    )}});
 
     let eliminar = document.getElementById("eliminar");
     eliminar.addEventListener("click", function(){  
@@ -36,14 +37,12 @@ let encontrado = document.getElementById("encontrado");
       }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire(
-          'Animal eliminado!',
+          'Animal eliminado!' ,
           'Estamos muy felices',
           'success'
           )}})
         });
 
-  };
-;
 
 
 //Fetch
